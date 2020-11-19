@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+
 .container {
   box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.50);
   margin: 1cm auto;
