@@ -1,0 +1,22 @@
+.container {
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.50);
+  margin: 1cm auto;
+  padding: 1cm;
+  width: fit-content;
+}
+
+.page {
+  height: 27.2cm;
+  width: 18.6cm;
+}
+
+@media print {
+  @page {
+    margin: 1cm;
+    size: A4;
+  }
+
+  .container {
+    display: contents;
+  }
+}
