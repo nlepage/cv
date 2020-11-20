@@ -1,19 +1,120 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+:root {
+  --border-color: lightgrey;
+  --link-color: #0366d6;
+}
 
 body {
   font-family: 'Noto Sans', sans-serif;
 }
 
+a {
+  color: var(--link-color);
+}
+
 .container {
   box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.50);
+  box-sizing: border-box;
   margin: 1cm auto;
   padding: 1cm;
-  width: fit-content;
+  width: 20.6cm;
 }
 
 .page {
+  display: flex;
+  flex-direction: row;
+  font-size: 10pt;
+  gap: 0.6cm;
   height: 27.2cm;
   width: 18.6cm;
+}
+
+header {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 4.5cm;
+}
+
+.photo {
+  border-radius: 50%;
+  border: solid 1px var(--border-color);
+  box-sizing: border-box;
+  margin-bottom: 4pt;
+  width: 100%;
+}
+
+.name {
+  font-size: 16pt;
+  margin: 0 0 4pt;
+  white-space: nowrap;
+}
+
+.title {
+  margin: 0;
+}
+
+.separator {
+  border: solid 1px var(--border-color);
+  margin: 10pt 0;
+  width: 100%;
+}
+
+.workplace {
+  margin: 0 0 4pt;
+}
+
+address {
+  font-style: normal;
+}
+
+main {
+  width: 13.5cm;
+}
+
+.filename {
+  color: rgba(0, 0, 0, 0.8);
+  font-family: 'Roboto Mono', monospace;
+  margin: 0 0 10pt;
+}
+
+section {
+  border: solid 1px var(--border-color);
+  border-radius: 4pt;
+  padding: 10pt;
+}
+
+.readme {
+  margin-bottom: 20pt;
+}
+
+.pinned-title {
+  margin: 0 0 5pt;
+}
+
+section > h2 {
+  font-size: 16pt;
+  margin: 0;
+}
+
+.pinned h4 {
+  margin: 0 0 4pt;
+}
+
+.pinned {
+  display: grid;
+  gap: 10pt;
+  grid-template-columns: 1fr 1fr;
+}
+
+.pinned > section {
+  padding: 5pt;
+}
+
+.pinned p {
+  margin: 0;
 }
 
 @media print {
