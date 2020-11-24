@@ -8,6 +8,8 @@
 
 body {
   font-family: 'Noto Sans', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 hr {
@@ -32,7 +34,7 @@ a {
 .page {
   display: flex;
   flex-direction: row;
-  font-size: 9.5pt;
+  font-size: 9pt;
   gap: 0.6cm;
   height: 27.2cm;
   width: 18.6cm;
@@ -120,7 +122,7 @@ section > h2 {
 
 @media print {
   @page {
-    margin: 1cm;
+    margin: 1cm auto;
     size: A4;
   }
 
@@ -169,4 +171,22 @@ section > h2 {
   position: absolute;
   text-align: center;
   width: 20pt;
+}
+
+.twitter {
+  margin: 0 0 4pt;
+}
+
+.twitter > img {
+  vertical-align: middle;
+  width: 16px;
+}
+
+.github {
+  margin: 0 0 4pt;
+}
+
+.github > img {
+  vertical-align: middle;
+  width: 16px;
 }
