@@ -10,6 +10,13 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 
+hr {
+  background-color: var(--border-color);
+  border: none;
+  height: 1px;
+  margin: 5pt 0;
+}
+
 a {
   color: var(--link-color);
 }
@@ -25,7 +32,7 @@ a {
 .page {
   display: flex;
   flex-direction: row;
-  font-size: 10pt;
+  font-size: 9.5pt;
   gap: 0.6cm;
   height: 27.2cm;
   width: 18.6cm;
@@ -56,12 +63,6 @@ header {
   margin: 0;
 }
 
-.separator {
-  border: solid 1px var(--border-color);
-  margin: 10pt 0;
-  width: 100%;
-}
-
 .workplace {
   margin: 0 0 4pt;
 }
@@ -74,24 +75,24 @@ main {
   width: 13.5cm;
 }
 
-.filename {
+.readme > p {
+  margin: 10pt 0 0;
+ }
+
+.readme > p.filename {
   color: rgba(0, 0, 0, 0.8);
   font-family: 'Roboto Mono', monospace;
-  margin: 0 0 10pt;
+  margin: 0 0 5pt;
 }
 
 section {
   border: solid 1px var(--border-color);
   border-radius: 4pt;
-  padding: 10pt;
+  padding: 8pt;
 }
 
-.readme {
-  margin-bottom: 20pt;
-}
-
-.pinned-title {
-  margin: 0 0 5pt;
+.pinned-title, .activity-title {
+  margin: 15pt 0 5pt;
 }
 
 section > h2 {
@@ -126,4 +127,46 @@ section > h2 {
   .container {
     display: contents;
   }
+}
+
+.activity > article {
+  border-left: 1px solid var(--border-color);
+  margin-left: 10pt;
+  padding: 5pt 0 5pt 10pt;
+  position: relative;
+}
+
+.activity-time {
+  align-items: center;
+  color: grey;
+  display: flex;
+  flex-direction: row;
+  gap: 5pt;
+}
+
+.activity-time > hr {
+  flex: 1;
+  margin: 0;
+}
+
+.activity h4 {
+  margin: 5pt 0 0 3pt;
+}
+
+.activity p {
+  margin: 5pt 0 0;
+}
+
+.activity-icon {
+  background-color: rgb(190, 190, 190);
+  border: solid 2px white;
+  border-radius: 50%;
+  box-sizing: border-box;
+  height: 20pt;
+  left: -10.5pt;
+  margin-top: 2pt;
+  padding: 1.5pt;
+  position: absolute;
+  text-align: center;
+  width: 20pt;
 }
